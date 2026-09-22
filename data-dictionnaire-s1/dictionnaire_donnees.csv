@@ -1,0 +1,25 @@
+Nom,Signification,Type,Obligatoire,Calculée
+#article
+titre,Titre de l’article,string,Oui,Non
+contenu,Contenu de l’article,string,Oui,Non
+date_publication,Date de publication de larticle,date,Oui,Oui
+durre_lecture,duree estimée de la lecture ,int,Oui,Oui
+description,description courte de l’article,string,Oui,Non
+image,image d'article,string,Oui,Non
+#Catégorie
+categorie_nom,nom de categorie,string,Oui,Non
+categoie_color,color de categorie,string,Oui,Non
+categorie_icon,icon de categorie,string,Oui,Non
+#Auteur
+nom,nom de l'auteur,string,Oui,Non
+prenom,prenom de l'auteur,string,Oui,Non
+email,email de auteur pour Connectez,string,Oui,Non
+password,password pour connectez lauteur,string,Oui,Non
+photo_profile,photo de profile de auteur,string,Non,Non
+#Admin
+nom_admin,Nom de l'administrateur,stringe,Oui,non
+photo_admin,Photo de profil de l'administrateur,stringe,Non,non
+statut_article,Statut de l'article,string,oui,non
+nombre_articles,Nombre total d'articles publiés,int,Oui,oui
+nombre_categories,Nombre total de catégories,int,oui,oui
+nombre_vues,Nombre total de vues des articles,int,oui,oui

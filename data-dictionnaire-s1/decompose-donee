@@ -1,0 +1,62 @@
+1 — Décomposition des données
+
+Définition :
+Séparer les données en groupes cohérents pour éviter leur répétition.
+
+Exemple :
+ARTICLE → AUTEUR + CATEGORIE
+
+2 — Dépendance fonctionnelle
+
+Définition :
+Une donnée détermine une autre donnée.
+
+Exemple :
+
+id_auteur → nom_auteur, email_auteur
+3 — Groupe de données
+
+Les données qui décrivent la même réalité forment un groupe.
+
+Exemple :
+
+id_auteur
+nom_auteur
+email_auteur
+        ↓
+     AUTEUR
+Slide 4 — Séparation
+
+On sépare les données qui se répètent.
+
+Exemple :
+
+ARTICLE          CATEGORIE
+id_article       id_categorie
+titre            nom_categorie
+                 description
+
+
+                 >exercice :
+
+
+                 Produit
+idProduit -> nomProduit , prixProduit
+
+Commande
+idCommande -> numeroCommande , dateCommande
+
+CommandeProduit
+idProduit , numeroCommande -> quantiteCommande
+
+Client
+idClient -> nomClient , emailClient
+
+Les Groupes
+Commande ( idCommande, numeroCommande, dateCommande, idClient )
+
+Produit ( idProduit, nomProduit, prixProduit )
+
+commandeProduit ( idProduit, idCommande, quantiteCommande )
+
+client ( idClient, nomClient, emailClient )
