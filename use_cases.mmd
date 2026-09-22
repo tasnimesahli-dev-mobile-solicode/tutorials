@@ -1,0 +1,38 @@
+usecase-beta
+direction LR
+
+actor Admin("Admin")
+actor Auteur("Auteur")
+actor visiteur("Visiteur")
+
+UC1("Consulter les catégories")
+UC2("Ajouter une catégorie")
+UC3("Modifier une catégorie")
+UC4("Supprimer une catégorie")
+UC5("Créer un auteur")
+UC6("Valider un article")
+UC7("Publier un article")
+
+UC8("Ajouter un article")
+UC9("Modifier un article non publié")
+UC10("Supprimer un article non publié")
+UC11("Changer son profil")
+UC12("Réinitialiser son mot de passse")
+
+UC13("Consulter les articles")
+
+Admin---UC1
+Admin---UC2
+Admin---UC3
+Admin---UC4
+Admin---UC5
+Admin---UC6
+Admin---UC7
+
+Auteur---UC8
+Auteur---UC9
+Auteur---UC10
+Auteur---UC11
+Auteur---UC12
+
+Visiteur---UC13
