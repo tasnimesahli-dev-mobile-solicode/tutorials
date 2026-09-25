@@ -1,18 +1,32 @@
 <?php
 class categorie {
-    public $id;
-    public $nom;
-    public $couleur;
-    public $icon;
-    public function __construct($id , $nom , $couleur , $icon) {
-        $this->id=$id;
-        $this->nom=$nom;
-        $this->couleur=$couleur;
-        $this->icon=$icon;
+    private int $id;
+    private string $nom;
+    private string $couleur;
+    private string $icon;
+  
+    public function getId() :int {
+        return $this->id;
     }
-    public function afficher(){
-        echo $this->id ."-" .$this->nom ."-" .$this->couleur ."-" .$this->icon;
+    public function getNom() :string {
+        return $this->nom;
+    }
+    public function getCouleur() :string {
+        return $this->couleur;
+    }
+    public function getIcon() :string {
+        return $this->icon;
+    }
+    public function setNom(string $newNom) :void{
+        $this->nom=$newNom;
+    }
+    public function setId(int $newId) :void{
+        $this->id=$newId;
+    }
+    public function setCouleur(string $newCouleur) :void{
+        $this->couleur=$newCouleur;
+    }
+    public function setIcon(string $newIcon) :void{
+        $this->icon=$newIcon;
     }
 }
-$categorie1=new categorie("1" , "DEV" , "red" , "star");
-$categorie1->afficher();
