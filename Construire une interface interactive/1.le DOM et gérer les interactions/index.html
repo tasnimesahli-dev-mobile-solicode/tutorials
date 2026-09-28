@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des catégories</title>
+</head>
+<body>
+
+    <h1>Liste des catégories</h1>
+
+    <button id="btn-show-form">Nouvelle catégorie</button>
+
+    <section id="section-form" hidden>
+
+        <form id="form-categorie">
+
+            <input type="text" id="cat-nom" placeholder="Nom de la catégorie">
+
+            <input type="text" id="cat-couleur" placeholder="Couleur"> 
+
+            <button type="submit">Ajouter</button>
+
+            <button type="button" id="btn-cancel-form">Annuler</button>
+        </form>
+    </section>
+
+    <h2>Catégories</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Couleur</th>
+            </tr>
+        </thead>
+        <tbody id="table-categories-body">
+            <tr>
+                <td>Technologie</td>
+                <td>Bleu</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
