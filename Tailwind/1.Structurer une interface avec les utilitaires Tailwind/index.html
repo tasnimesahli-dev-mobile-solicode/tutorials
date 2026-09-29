@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Conteneur principal -->
+    <div class="flex min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="w-64">
+            <h2>Sidebar</h2>
+            <p>Accueil</p>
+            <p>Produits</p>
+            <p>Utilisateurs</p>
+        </aside>
+
+        <!-- Contenu principal -->
+        <div class="flex-1 flex flex-col">
+
+            <!-- Header -->
+            <header class="flex items-center justify-between">
+                <h1>Dashboard</h1>
+                <button>Déconnexion</button>
+            </header>
+
+            <!-- Main -->
+            <main class="flex-1 p-6">
+
+                <!-- Conteneur du contenu -->
+                <div class="max-w-5xl mx-auto">
+                    <h2>Bienvenue</h2>
+                    <p>
+                        Voici le contenu principal de votre dashboard.
+                    </p>
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
