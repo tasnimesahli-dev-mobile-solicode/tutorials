@@ -1,39 +1,24 @@
-<?php 
-class Categorie {
-    private int $id;
-    private string $nom;
-    private string $colour;
-    private string $icon;
+<?php
+class categorie {
+    private $name;
+    private $colour;
 
-    public function __construct(int $id , string $nom , string $colour , string $icon) {
-        $this->id=$id;
-        $this->nom=$nom;
+    public function __construct($name , $colour){
+        $this->name=$name;
         $this->colour=$colour;
-        $this->icon=$icon;
     }
-public function getId() :int {
-        return $this->id;
+    public function getName() :string {
+        return $this->name;
     }
-public function getNom() :string {
-        return $this->nom;
-    }
-public function getColour() :string {
+    public function getColour() :string {
         return $this->colour;
     }
-public function getIcon() :string {
-        return $this->icon;
+    public function setName(string $name){
+        $this->name=$name;
     }
-public function setId(int $id) :void{
-    $this->id=$id;
+    public function setColour(string $colour) {
+        $this->colour=$colour;
+    }
+
+
 }
-public function setNom(string $nom) :void{
-    $this->nom=$nom;
-}
-public function setColour(string $colour) :void{
-    $this->colour=$colour;
-}
-public function setIcon(string $icon) :void{
-    $this->icon=$icon;
-}
-}
-?>
