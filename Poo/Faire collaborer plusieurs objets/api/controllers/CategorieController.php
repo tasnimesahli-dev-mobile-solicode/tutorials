@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../classes/GestionCategorie.php';
+require_once __DIR__ . '/../../backend/classesclasses/GestionCategorie.php';
 class CategorieController {
     public function listCategories():void{
         $categorie=new GestionCategorie();
