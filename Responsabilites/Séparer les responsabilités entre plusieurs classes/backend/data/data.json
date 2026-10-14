@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nom": "Développement",
+        "couleur": "jaune",
+        "icone": "code"
+    },
+    {
+        "id": 2,
+        "nom": "Design",
+        "couleur": "bleu",
+        "icone": "palette"
+    }
+]
