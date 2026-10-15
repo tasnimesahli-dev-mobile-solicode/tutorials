@@ -17,7 +17,7 @@ class Categorie {
     public function getNom() :string{
         return $this->nom;
     }
-    public function getColeur() :string{
+    public function getCouleur() :string{
         return $this->coleur;
     }
     public function getIcone() :string {
