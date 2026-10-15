@@ -1,3 +1,4 @@
+
 <?php
 require_once 'Categorie.php';
 class GestionCategorie {
@@ -30,8 +31,9 @@ class GestionCategorie {
         $data[$id]['nom']=$categorie->getNom();
         $data[$id]['couleur']=$categorie->getCouleur();
         $data[$id]['icone']=$categorie->getIcone();
-        }
         return file_put_contents(self::$dataFile , json_encode($data));
+
+        }
     }
 
     }
@@ -44,3 +46,10 @@ class GestionCategorie {
         return file_put_contents(self::$dataFile , json_encode($data));
     }
 }}}
+$gestion = new GestionCategorie();
+
+$categories = $gestion->getAll();
+
+foreach ($categories as $categorie) {
+    echo $categorie->getNom() . "<br>";
+}
