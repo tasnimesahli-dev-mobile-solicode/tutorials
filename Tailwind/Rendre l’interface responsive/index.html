@@ -33,23 +33,43 @@
 
                 <div>
                     <label for="nom">Nom de catégorie</label>
-                    <input type="text" id="nom" name="nom"
-                           class="w-full border p-2 rounded" required>
-                   <label for="description">Description de catégorie</label>
-                           <input type="text" id="description" name="description"
-                           class="w-full border p-2 rounded" required>
+                    <input type="text" id="nom" name="nom" required
+                           class="w-full border border-gray-300 rounded p-2
+                                  focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <div>
+                    <label for="description">Description de catégorie</label>
+                    <input type="text" id="description" name="description" required
+                           class="w-full border border-gray-300 rounded p-2
+                                  focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
 
                 <div class="md:col-span-2">
                     <button type="submit" id="btnSubmit"
-                            class="bg-blue-600 text-white px-4 py-2 rounded">
-                        Ajouter
+                            class="bg-blue-600 text-white px-4 py-2 rounded
+                                   hover:bg-blue-700 transition duration-200
+                                   disabled:opacity-75 disabled:cursor-not-allowed
+                                   flex items-center gap-2">
+
+                        <!-- Spinner -->
+                        <svg id="spinner"
+                             class="hidden w-4 h-4 animate-spin"
+                             viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10"
+                                    stroke="currentColor" stroke-width="4"
+                                    class="opacity-25"></circle>
+                            <path fill="currentColor" class="opacity-75"
+                                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                        </svg>
+
+                        <span id="btnText">Ajouter</span>
                     </button>
                 </div>
 
             </form>
 
-            <p id="message"></p>
+            <p id="message" class="mt-4"></p>
 
             <!-- Tableau -->
             <div class="overflow-x-auto bg-white mt-6 p-4 rounded">
@@ -64,9 +84,14 @@
                 </table>
             </div>
 
-            <div id="toast-container"></div>
+            <!-- Toasts -->
+            <div id="toast-container"
+                 class="fixed bottom-4 right-4 flex flex-col gap-2">
+            </div>
 
         </main>
     </div>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
